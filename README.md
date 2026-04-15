@@ -38,8 +38,8 @@ WEB-INF/web.xml
 [Agregar captura de pantalla de la app corriendo aquí]
 
 ## Avance actual
-- [ ] Estructura del proyecto
-- [ ] Configuración de Tomcat
+- [x] Estructura del proyecto
+- [x] Configuración de Tomcat
 - [ ] Servlets básicos
 - [ ] JSP de votación y resultados
 - [ ] Conexión JDBC inicial
