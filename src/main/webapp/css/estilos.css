@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 0 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+}
+
+.alerta {
+    background-color: #f8d7da;
+    color: #842029;
+    border: 1px solid #f5c2c7;
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 16px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+.opcion {
+    margin: 10px 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Resultados */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+thead {
+    background-color: #2563eb;
+    color: #fff;
+}
+
+th, td {
+    padding: 10px 14px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background-color: #f0f4ff;
+}
+
+.mensaje-info {
+    background-color: #fff3cd;
+    color: #664d03;
+    border: 1px solid #ffecb5;
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+}
+
+.enlace-volver {
+    text-align: center;
+    margin-top: 24px;
+}
+
+.enlace-volver a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.enlace-volver a:hover {
+    text-decoration: underline;
+}
