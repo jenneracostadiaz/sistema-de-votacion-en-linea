@@ -5,6 +5,7 @@ import com.votacion.util.DBConnection;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -14,7 +15,7 @@ import java.util.Map;
 public class ResultadosDAO {
 
     // Devuelve el conteo de votos agrupado por opción
-    public Map<String, Integer> obtenerConteo() throws Exception {
+    public Map<String, Integer> obtenerConteo() throws SQLException {
         String sql = "SELECT opcion, COUNT(*) AS total FROM votos WHERE encuesta_id = 1 GROUP BY opcion ORDER BY total DESC";
         Map<String, Integer> resultados = new LinkedHashMap<>();
 

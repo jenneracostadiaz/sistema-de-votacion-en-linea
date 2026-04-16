@@ -5,6 +5,7 @@ import com.votacion.util.DBConnection;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 /**
  * Acceso a datos para votos.
@@ -12,7 +13,7 @@ import java.sql.PreparedStatement;
 public class VotoDAO {
 
     // Inserta un voto asociado a la encuesta con id=1
-    public void registrar(Voto voto) throws Exception {
+    public void registrar(Voto voto) throws SQLException {
         String sql = "INSERT INTO votos (encuesta_id, opcion, nombre_votante) VALUES (?, ?, ?)";
 
         try (Connection conn = DBConnection.getConnection();

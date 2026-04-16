@@ -48,7 +48,11 @@ db/
 5. La JSP muestra la tabla con opción, votos y porcentaje
 
 ## Evidencia de ejecución
-[Agregar captura de pantalla de la app corriendo aquí]
+### Formulario de votación
+![Formulario de votación](doc/formulario-votacion.png)
+
+### Resultados de la encuesta
+![Resultados](doc/resultados.png)
 
 ## Avance actual
 - [x] Estructura del proyecto

@@ -16,7 +16,7 @@
 <c:choose>
     <%-- 1. Error al cargar datos --%>
     <c:when test="${not empty error}">
-        <p class="alerta">${error}</p>
+        <p class="alerta"><c:out value="${error}"/></p>
     </c:when>
 
     <%-- 2. Sin votos registrados --%>
@@ -43,8 +43,8 @@
             <tbody>
                 <c:forEach var="entrada" items="${resultados}">
                     <tr>
-                        <td>${entrada.key}</td>
-                        <td>${entrada.value}</td>
+                        <td><c:out value="${entrada.key}"/></td>
+                        <td><c:out value="${entrada.value}"/></td>
                         <td>
                             <fmt:formatNumber value="${entrada.value / totalVotos}"
                                               type="percent"

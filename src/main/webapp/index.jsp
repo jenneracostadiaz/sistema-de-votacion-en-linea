@@ -14,7 +14,7 @@
 
 <!-- Mensaje de error si el servlet lo envió -->
 <c:if test="${not empty error}">
-    <p class="alerta">${error}</p>
+    <p class="alerta"><c:out value="${error}"/></p>
 </c:if>
 
 <form method="POST" action="${pageContext.request.contextPath}/votar">
