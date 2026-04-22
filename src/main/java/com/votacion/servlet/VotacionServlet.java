@@ -45,6 +45,7 @@ public class VotacionServlet extends HttpServlet {
 
         } catch (Exception e) {
             // 6. En caso de error, volver al formulario con mensaje
+            getServletContext().log("VotacionServlet error al registrar voto", e);
             request.setAttribute("error", "Error al registrar el voto, intenta de nuevo");
             request.getRequestDispatcher("index.jsp").forward(request, response);
         }
