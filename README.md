@@ -36,7 +36,7 @@ db/
 1. Importar el proyecto en IntelliJ como proyecto Maven
 2. Iniciar el servidor MySQL (por ejemplo con DBngin)
 3. Ejecutar el script `db/schema.sql` en MySQL
-4. Verificar credenciales en `util/DBConnection.java` (por defecto: `root` sin contraseña, puerto `3306`)
+4. Verificar credenciales en `util/DBConnection.java` (por defecto: `root` / `root`, puerto `3306`)
 5. Desplegar en Tomcat 10 desde IntelliJ
 6. Acceder a http://localhost:8080/votacion/
 
@@ -49,10 +49,10 @@ db/
 
 ## Evidencia de ejecución
 ### Formulario de votación
-![Formulario de votación](doc/formulario-votacion.png)
+![Formulario de votación](doc/vista-01.png)
 
 ### Resultados de la encuesta
-![Resultados](doc/resultados.png)
+![Resultados](doc/vista-02.png)
 
 ## Avance actual
 - [x] Estructura del proyecto
@@ -62,3 +62,5 @@ db/
 - [x] Conexión JDBC inicial
 - [x] Base de datos (schema.sql)
 - [ ] CRUD completo (Avance 2)
+
+> Nota: para entornos reales, cambia estas credenciales por una contraseña segura y un usuario dedicado de aplicación.
